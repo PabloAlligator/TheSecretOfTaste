@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/site/css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Тайна вкуса — букеты из клубники в шоколаде в Абакане</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="/">
+            <img
+              class="header__logo-image"
+              src="/site/img/logo.png"
+              alt="Тайна вкуса"
+            />
+
+            <div class="header__logo-content">
+              <span class="header__logo-title">Тайна вкуса</span>
+              <span class="header__logo-subtitle">Клубника в шоколаде</span>
+            </div>
+          </a>
+
+          <nav class="header__nav">
+            <a class="header__link header__link--active" href="/">Главная</a>
+            <a class="header__link" href="/catalog.html">Каталог</a>
+            <a class="header__link" href="/contacts.html">Контакты</a>
+          </nav>
+
+          <div class="header__actions">
+            <a class="header__cart" href="/cart.html" aria-label="Корзина">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M7 7H17L16 19H8L7 7Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M9 7V5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+              </svg>
+
+              <span class="header__cart-count">0</span>
+            </a>
+
+            <button
+              class="header__burger"
+              type="button"
+              aria-label="Открыть меню"
+            >
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__overlay"></div>
+
+      <div class="header__mobile">
+        <div class="header__mobile-top">
+          <span class="header__mobile-title">Меню</span>
+
+          <button class="header__close" type="button" aria-label="Закрыть меню">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="header__mobile-nav">
+          <a class="header__mobile-link" href="/">Главная</a>
+          <a class="header__mobile-link" href="/catalog.html">Каталог</a>
+          <a class="header__mobile-link" href="/contacts.html">Контакты</a>
+          <a class="header__mobile-link" href="/cart.html">Корзина</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <p class="hero__subtitle">Роскошь в каждой ягодке</p>
+
+              <h1 class="hero__title">
+                <!-- Премиальная клубника в шоколаде
+                <span>в Абакане</span> -->
+
+                <!-- В каждой ягодке своя <span>тайна вкуса</span> -->
+
+                Клубника в шоколаде для <span>особенных моментов</span>
+              </h1>
+
+              <p class="hero__description">
+                Изысканные букеты из свежей клубники в молочном, белом и темном
+                шоколаде — для подарка, праздника и особенного повода.
+              </p>
+
+              <div class="hero__actions">
+                <a
+                  class="hero__button hero__button--primary"
+                  href="/catalog.html"
+                >
+                  Выбрать набор
+                </a>
+
+                <a
+                  class="hero__button hero__button--secondary"
+                  href="/catalog.html"
+                >
+                  Смотреть каталог
+                </a>
+              </div>
+
+              <!-- <div class="hero__decor"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- оффер -->
+      <section class="offers">
+        <div class="container">
+          <div class="offers__top">
+            <div class="offers__heading">
+              <p class="offers__subtitle">Выбор гостей</p>
+
+              <h2 class="offers__title">
+                Букеты, которые чаще всего выбирают
+                <span>для подарка</span>
+              </h2>
+            </div>
+
+            <a class="offers__link" href="/catalog.html">
+              Смотреть весь каталог
+            </a>
+          </div>
+
+          <div class="offers__grid" id="popularProducts"></div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__inner">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  src="/site/img/icons/yagoda.png"
+                  alt="Подарочная упаковка"
+                />
+              </div>
+
+              <div class="advantages__content">
+                <h3 class="advantages__title">Свежие ягоды</h3>
+                <p class="advantages__text">
+                  Отбираем только спелую и сочную клубнику каждое утро.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  src="/site/img/icons/handmade.png"
+                  alt="Подарочная упаковка"
+                />
+              </div>
+
+              <div class="advantages__content">
+                <h3 class="advantages__title">Ручная работа</h3>
+                <p class="advantages__text">
+                  Каждая ягодка создаётся вручную с любовью и вниманием к
+                  деталям.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  src="/site/img/icons/time.png"
+                  alt="Быстро и качественно"
+                />
+              </div>
+
+              <div class="advantages__content">
+                <h3 class="advantages__title">Быстрая доставка</h3>
+                <p class="advantages__text">
+                  Доставим бережно и вовремя по Абакану в удобное для вас время.
+                </p>
+              </div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  src="/site/img/icons/upakovka.png"
+                  alt="Подарочная упаковка"
+                />
+              </div>
+
+              <div class="advantages__content">
+                <h3 class="advantages__title">Подарочная упаковка</h3>
+                <p class="advantages__text">
+                  Стильная упаковка и открытка — идеальный подарок для близких.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- футер -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__main">
+            <a class="footer__logo" href="/">
+              <img
+                class="footer__logo-image"
+                src="/site/img/logo.png"
+                alt="Тайна вкуса"
+              />
+
+              <div class="footer__logo-content">
+                <span class="footer__logo-title">Тайна вкуса</span>
+                <span class="footer__logo-subtitle">Клубника в шоколаде</span>
+              </div>
+            </a>
+
+            <p class="footer__text">
+              Авторские букеты из свежей клубники в шоколаде для подарков,
+              праздников и особенных моментов.
+            </p>
+          </div>
+
+          <nav class="footer__nav">
+            <p class="footer__caption">Навигация</p>
+
+            <a class="footer__link" href="/">Главная</a>
+            <a class="footer__link" href="/catalog.html">Каталог</a>
+            <a class="footer__link" href="/contacts.html">Контакты</a>
+            <a class="footer__link" href="/cart.html">Корзина</a>
+          </nav>
+
+          <div class="footer__contacts">
+            <p class="footer__caption">Контакты</p>
+
+            <a class="footer__contact" href="tel:+79618974193">
+              +7 961 897-41-93
+            </a>
+
+            <a class="footer__contact" href="https://wa.me/79999999999">
+              MAX
+            </a>
+
+            <a class="footer__contact" href="https://vk.com/club223496791">
+              VK
+            </a>
+
+            <p class="footer__address">Абакан, доставка по городу</p>
+          </div>
+
+          <div class="footer__cta">
+            <p class="footer__caption">Заказать букет</p>
+
+            <p class="footer__cta-text">
+              Оставьте заявку — мы свяжемся с вами и поможем подобрать букет.
+            </p>
+
+            <button class="footer__button quick-order-trigger" type="button">
+              Быстрый заказ
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>© 2026 Тайна вкуса. Все права защищены.</p>
+
+          <a href="/privacy-policy.html"> Политика конфиденциальности </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="quick-modal" id="quickOrderModal" aria-hidden="true">
+      <div class="quick-modal__overlay" data-quick-close></div>
+
+      <div class="quick-modal__dialog" role="dialog" aria-modal="true">
+        <button class="quick-modal__close" type="button" data-quick-close>
+          ×
+        </button>
+
+        <p class="quick-modal__label">Быстрый заказ</p>
+
+        <h2 class="quick-modal__title">Оставьте контакты</h2>
+
+        <p class="quick-modal__text">
+          Мы свяжемся с вами, уточним детали букета и удобное время получения.
+        </p>
+
+        <div class="quick-modal__product" id="quickOrderProduct"></div>
+
+        <form class="quick-modal__form" id="quickOrderForm">
+          <input type="hidden" name="productId" id="quickProductId" />
+          <input type="hidden" name="type" value="quick" />
+          <input type="hidden" name="formStartedAt" id="quickFormStartedAt" />
+
+          <input
+            class="quick-modal__hidden"
+            type="text"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+
+          <label>
+            <span>Ваше имя</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Например, Павел"
+              minlength="2"
+              maxlength="80"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Телефон</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+7 ___ ___-__-__"
+              minlength="6"
+              maxlength="40"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Комментарий</span>
+            <textarea
+              name="comment"
+              placeholder="Например: нужен букет на вечер, с доставкой"
+              maxlength="500"
+            ></textarea>
+          </label>
+
+          <label class="quick-modal__agreement">
+            <input
+              type="checkbox"
+              name="privacyAccepted"
+              value="yes"
+              required
+            />
+
+            <span>
+              Я соглашаюсь с политикой конфиденциальности и даю согласие на
+              обработку персональных данных.
+            </span>
+          </label>
+
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      <div class="toast__icon">✓</div>
+
+      <div class="toast__content">
+        <strong>Готово</strong>
+        <span>Действие выполнено</span>
+      </div>
+    </div>
+
+    <script src="/site/js/main.js"></script>
+  </body>
+</html>
